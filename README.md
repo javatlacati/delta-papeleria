@@ -5,7 +5,6 @@ Sistema de escritorio de compra y venta simple para una papelería.
 
 ¿Cómo se corre?
 ---
-Si eres usuario sin conocimientos de programación
 
 1. ve a la pestaña releases y baja el archivo.jar más reciente
 2. debes de tener un jre instalado
@@ -13,6 +12,16 @@ Si eres usuario sin conocimientos de programación
 4. ve a la linea de comandos e introduce el comando
 
         java -jar [NOMBRE_DEL_JAR].jar
+
+Nota: no necesitas tener base de datos, el sistema te creará una base de datos para hacer tus pruebas que se borrará cuando termines de usar la aplicación.
+
+Si deseas usar **comercialemnte** esta aplicación con una base de datos de tu propiedad no dudes en contactarnos para cotizar el servicio de **soporte técnico**.
+
+Si eres un desarrollador de aplicaciones o un usuario del sistema no dudes en escribirnos en la pestaña de **issues** para:
+ 
+* reportar errores
+* resolver dudas
+* solicitar nuevas características.
 
 Prerequisitos para modificar
 ---
@@ -34,5 +43,5 @@ Creadores:
 * [Ligia Barrera](https://github.com/ligiabarrera)
 * [Ikaru1](https://github.com/Ikaru1)
 * [FredyClarosRojas](https://github.com/FredyClarosRojas)
-* [Vehimar Lopez Terrazas](https://github.com/vehimar)
-* [Ruslan López Carro](https://github.com/javatlacati/)
+* [Vehimar Lopez Terrazas](https://github.com/vehimar) - vehimarlopez_7[arroba]hotmail.com
+* [Ruslan López Carro](https://github.com/javatlacati/) - scherzo16[arroba]gmail.com
