@@ -8,6 +8,7 @@ import entidades.Producto;
 import org.springframework.beans.factory.annotation.Autowired;
 import repositorios.NProducto;
 
+import javax.swing.*;
 import java.awt.*;
 import java.util.Iterator;
 import java.util.List;
@@ -228,7 +229,11 @@ public class JdProducto extends javax.swing.JDialog {
     }//GEN-LAST:event_formComponentShown
 
     private void btnCatalogoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCatalogoActionPerformed
-        // TODO add your handling code here:
+        if(row == -1){
+            JOptionPane.showMessageDialog(this, "Seleccione un producto de la tabla",
+                    "Selección", JOptionPane.ERROR_MESSAGE);
+        }
+        // TODO ir al frame apropiado apra mostrar el detalle de compra por producto
     }//GEN-LAST:event_btnCatalogoActionPerformed
 
     private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
