@@ -23,7 +23,6 @@ import java.util.*;
 /**
  * @author Personal
  */
-@Component
 public class JdNuevaCompra extends javax.swing.JDialog {
 
     /**

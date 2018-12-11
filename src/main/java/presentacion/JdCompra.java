@@ -25,7 +25,6 @@ import java.util.List;
 /**
  * @author Personal
  */
-@Component
 public class JdCompra extends javax.swing.JDialog {
 
     private JdNuevaCompra frmNuevaCompra;

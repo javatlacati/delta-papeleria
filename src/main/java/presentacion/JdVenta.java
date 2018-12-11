@@ -25,7 +25,6 @@ import java.util.List;
 /**
  * @author Fredy
  */
-@Component
 public class JdVenta extends javax.swing.JDialog {
 
     /**
@@ -263,8 +262,12 @@ public class JdVenta extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     private void cargarComboCliente() {
-        List<Cliente> Listcliente = new ArrayList<>();
-        Listcliente = ncliente.findAll();
+        List<Cliente> Listcliente;
+        try {
+            Listcliente = ncliente.findAll();
+        }catch (NullPointerException npe){
+            Listcliente = new ArrayList<>();
+        }
         for (int i = 0; i < Listcliente.size(); i++) {
             jComboBoxCliente.addItem(Listcliente.get(i));
         }
@@ -272,8 +275,12 @@ public class JdVenta extends javax.swing.JDialog {
     }
 
     private void cargarComboProducto() {
-        List<Producto> Listproducto = new ArrayList<>();
-        Listproducto = nproducto.findAll();
+        List<Producto> Listproducto;
+        try {
+            Listproducto = nproducto.findAll();
+        }catch (NullPointerException npe){
+            Listproducto = new ArrayList<>();
+        }
         for (int i = 0; i < Listproducto.size(); i++) {
             jComboBoxProducto.addItem(Listproducto.get(i));
         }

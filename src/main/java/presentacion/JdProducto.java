@@ -16,7 +16,6 @@ import java.util.List;
 /**
  * @author Sinai
  */
-@org.springframework.stereotype.Component
 public class JdProducto extends javax.swing.JDialog {
 
     /**

@@ -15,7 +15,6 @@ import java.awt.event.KeyEvent;
  *
  * @author vehimar
  */
-@Component
 public class JdRegistroCliente extends javax.swing.JDialog {
 
     final

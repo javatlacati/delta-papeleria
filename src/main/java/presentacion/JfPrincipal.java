@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import repositorios.*;
 
+import java.awt.*;
+
 /**
  * @author Fredy
  */

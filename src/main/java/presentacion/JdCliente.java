@@ -16,7 +16,6 @@ import java.util.List;
 /**
  * @author vehimar
  */
-@Component
 public class JdCliente extends javax.swing.JDialog {
 
     private Object clienteBqd;

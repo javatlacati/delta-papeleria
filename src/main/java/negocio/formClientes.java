@@ -7,6 +7,7 @@ package negocio;
 
 import entidades.Cliente;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import repositorios.ClienteRepository;
 
 import java.util.LinkedList;
@@ -16,6 +17,7 @@ import java.util.List;
  *
  * @author PATY
  */
+@Component
 public class formClientes extends javax.swing.JFrame {
 
     @Autowired

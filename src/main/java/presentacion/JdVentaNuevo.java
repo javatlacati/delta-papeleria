@@ -22,7 +22,6 @@ import java.util.List;
 /**
  * @author Fredy
  */
-@Component
 public class JdVentaNuevo extends javax.swing.JDialog {
 
     /**
@@ -36,7 +35,7 @@ public class JdVentaNuevo extends javax.swing.JDialog {
     private final ClienteRepository ncliente;
     private final NProducto nproducto;
 
-    @Autowired
+
     public JdVentaNuevo(java.awt.Dialog parent, boolean modal, NVenta nventa, ClienteRepository ncliente, NDetalleVenta ndetalleventa, NProducto nproducto) {
         super(parent, modal);
         this.nventa = nventa;
@@ -68,7 +67,11 @@ public class JdVentaNuevo extends javax.swing.JDialog {
         listVenta = new ArrayList<Venta>();
         cliente = new Cliente();
 //        ncliente = new NCliente();
-        listVenta = nventa.findAll();
+        try {
+            listVenta = nventa.findAll();
+        }catch (NullPointerException npe){
+            listVenta = new ArrayList<>();
+        }
         listarVenta(tblVentas);
         this.setLocationRelativeTo(null);
     }
@@ -183,8 +186,8 @@ public class JdVentaNuevo extends javax.swing.JDialog {
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
         this.dispose();
-//        JDVenta jdventa = new JDVenta(this, true);
-//        jdventa.setVisible(true);
+        JdVenta jdVenta = new JdVenta(null, true, nproducto,nventa,ndetalleventa,ncliente);
+        jdVenta.setVisible(true);
     }//GEN-LAST:event_btnNuevoActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -14,7 +14,6 @@ import javax.swing.*;
 /**
  * @author Sinai
  */
-@Component
 public class JdProductoNuevo extends javax.swing.JDialog {
 
     /**
